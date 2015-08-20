@@ -7,4 +7,6 @@ class TaksTest(TestCase):
         """
         When create task the print object should be equals to proper text
         """
-        
+        text = 'My task'
+        task = Task(text=text)
+        self.assertEqual(str(task), text)
