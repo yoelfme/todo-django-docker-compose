@@ -1,4 +1,8 @@
 # Files of Python
 *.pyc
+
 db.sqlite3
 web/dump.rdb
+
+# Configuration
+.env
