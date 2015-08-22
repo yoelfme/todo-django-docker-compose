@@ -1,0 +1,13 @@
+.container {
+  max-width: 500px;
+}
+
+.logo {
+  width: 256px;
+  height: 256px;
+}
+
+.title {
+  color: #5bc0de;
+  margin: 15px 0;
+}

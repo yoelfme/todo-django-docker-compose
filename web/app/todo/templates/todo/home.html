@@ -1,0 +1,26 @@
+{% extends "todo/_base.html" %}
+
+{% block content  %}
+  {% load staticfiles %}
+  <div class="text-center">
+    <h1 class="title">TODO Application</h1>
+    <br>
+    <p>This page has been viewed <strong>{{ counter }}</strong> times!</p>
+  </div>
+
+  <form action="/" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <input name="text" type="text" class="form-control input-lg" placeholder="Enter a message" required >
+    </div>
+    <input type="submit" class="btn btn-info btn-lg btn-block" value="Submit">
+  </form>
+
+  <hr>
+  
+  <div>
+    {% for task in tasks %}
+      <h4 class="alert alert-info"><strong>{{ task.text }}</strong> - <em>{{ task.pub_date }}</em></h4>
+    {% endfor %}
+  </div>
+{% endblock %}

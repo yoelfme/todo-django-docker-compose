@@ -13,7 +13,7 @@ class HomeView(View):
         tasks = Task.objects.all()
         # counter = redis.incr('counter')
         counter = 0
-        return render(request, 'todo/_base.html', {
+        return render(request, 'todo/home.html', {
             'tasks': tasks,
             'counter': counter
         })
