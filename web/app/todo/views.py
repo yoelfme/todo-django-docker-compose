@@ -4,7 +4,7 @@ from django.views.generic import View
 from .models import Task
 from redis import Redis
 
-redis = Redis(host='localhost', port=6379)
+redis = Redis(host='redis', port=6379)
 
 
 class HomeView(View):

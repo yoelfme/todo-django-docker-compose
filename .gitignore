@@ -6,3 +6,6 @@ web/dump.rdb
 
 # Configuration
 .env
+
+# Files
+.DS_Store
