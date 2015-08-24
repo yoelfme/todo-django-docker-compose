@@ -4,8 +4,5 @@
 db.sqlite3
 web/dump.rdb
 
-# Configuration
-.env
-
 # Files
 .DS_Store
